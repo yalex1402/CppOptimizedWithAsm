@@ -7,11 +7,9 @@ using namespace std;
 
 
 int main() {
-    long arr1[10] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-    const int multiplier = 7;
+    long arr1[10] = { 15, 21, 35, 23, 65, 60, 12, 32, 76, 100 };
+    const int multiplier = 5;
     time_t startTime, endTime;
-
-    //Testing the C++ function
 
     time(&startTime);
     CMultArray(multiplier, arr1, 10);
@@ -19,7 +17,6 @@ int main() {
 
     cout << "The time taken to run C++ function is: " << long(endTime - startTime) << " seconds.";
 
-    //Testing the assembly language procedure
     time(&startTime);
     AsmMultArray(multiplier, arr1, 10);
     time(&endTime);
