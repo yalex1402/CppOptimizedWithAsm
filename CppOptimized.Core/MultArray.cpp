@@ -19,12 +19,12 @@ int main() {
 
     cout << "The time taken to run C++ function is: " << long(endTime - startTime) << " seconds.";
 
-    ////Testing the assembly language procedure
-    //time(&startTime);
-    //AsmMultArray(multiplier, arr1, 10);
-    //time(&endTime);
+    //Testing the assembly language procedure
+    time(&startTime);
+    AsmMultArray(multiplier, arr1, 10);
+    time(&endTime);
 
-    //cout << "The time taken to run Assembly language procedure is: " << long(endTime - startTime) << " seconds.";
+    cout << "The time taken to run Assembly language procedure is: " << long(endTime - startTime) << " seconds.";
 
     return 0;
 }
